@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opencode — Connexion Gmail</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; line-height: 1.65; }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .lead { color: #666; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.3);
+           font-size: .85rem; color: #666; }
+  a { color: #1a73e8; }
+</style>
+</head>
+<body>
+
+<h1>Opencode — Connexion Gmail</h1>
+<p class="lead">Outil personnel qui connecte un assistant de programmation (Opencode) à un compte Gmail via l'API Google.</p>
+
+<h2>Ce que fait l'outil</h2>
+<ul>
+  <li>Rechercher et lire les messages reçus (pour repérer une réponse à un mail).</li>
+  <li>Préparer un <strong>brouillon</strong> dans Gmail, que le propriétaire relit et envoie lui-même.</li>
+  <li>Envoyer un message <strong>uniquement sur demande explicite</strong>, destinataire et texte validés au préalable.</li>
+</ul>
+
+<h2>Où il s'exécute</h2>
+<p>
+  Uniquement en local, sur le poste du propriétaire. Le serveur MCP est lancé par
+  Opencode via <code>uvx workspace-mcp</code>. Il n'existe aucun service tiers,
+  aucune base de données distante, aucun proxy.
+</p>
+
+<h2>Données concernées</h2>
+<p>
+  L'accès porte sur un seul compte : <code>thomas.lesieux894@gmail.com</code>.
+  Scopes OAuth demandés : <code>gmail.readonly</code>, <code>gmail.compose</code>,
+  <code>gmail.send</code>. Aucun accès en écriture aux labels, aux paramètres du
+  compte ou aux données de Drive.
+</p>
+
+<h2>Documents</h2>
+<ul>
+  <li><a href="privacy.html">Politique de confidentialité</a></li>
+  <li><a href="terms.html">Conditions d'utilisation</a></li>
+</ul>
+
+<footer>
+  Contact : thomas.lesieux894@gmail.com<br>
+  Dernière mise à jour : 13 novembre 2026.
+</footer>
+
+</body>
+</html>
